@@ -98,6 +98,15 @@ In case you need to add additional analysis parameters, and you do not wish to s
       -Dsonar.verbose=true
 ```
 
+You can change the Dockerfile base image by using the optional input `baseImage` like this:
+
+```yaml
+- name: SonarQube Scan
+  uses: sonarsource/sonarqube-scan-action@master
+  with:
+    baseImage: my_account.dkr.ecr.us-east-1.amazonaws.com/sonar/sonar-scanner-cli:4.8
+```
+
 More information about possible analysis parameters can be found in [the documentation](https://redirect.sonarsource.com/doc/analysis-parameters.html).
 
 ### Environment variables

@@ -17,3 +17,6 @@ inputs:
     description: Set the sonar.projectBaseDir analysis property
     required: false
     default: .
+  baseImage:
+    description: SonarQube CLI base image (default sonarsource/sonar-scanner-cli:4.8)
+    required: false
